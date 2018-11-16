@@ -1,0 +1,45 @@
+export default [
+  {
+    name:"量化模型",
+    icon:"/static/icon/img_cl@2x.png",
+    content:"共2个投资组合",
+    new:0,
+    url:"/index/touziMain"
+  },
+  {
+    name:"市场观点",
+    icon:"/static/icon/img_gd@2x.png",
+    content:"共32条市场观点",
+    new:0,
+    url:"imformation"
+  },
+  {
+    name:"直播",
+    icon:"/static/icon/img_zb@2x.png",
+    new:0,
+    content:"最新：16:30~17:30宗式涨停法",
+   url:"liveList"
+   // url:"broadcast"
+  },
+  {
+    name:"咨询",
+    icon:"/static/icon/img_zx@2x.png",
+    content:"排班时间：17:00～18:00",
+    new:12,
+    url:"consultation"
+  },
+  {
+    name:"课程",
+    icon:"/static/icon/img_zx1@2x.png",
+    content:"共2门系列课",
+    new:0,
+    url:"lessonList"
+  },
+  {
+    name:"自选股",
+    icon:"/static/icon/img_zxg@2x.png",
+    content:"12支自选股",
+    new:0,
+    url:"message"
+  }
+];

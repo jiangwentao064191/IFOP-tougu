@@ -1,0 +1,467 @@
+/*@color-less-zb:#E7C27F;//课程按钮边框颜色
+@color-less:#8F949C;//课程text颜色
+@bg-color-aside:#2A2E3A;//左侧菜单背景
+@color-font-btn:#1B1D24;//课程按钮字体颜色
+@bg-color-textarea:#282F36;//资讯底部输入框
+@color-btn:#7D858E;//按钮灰色
+@color-bg-radius:#111111;//直播删除按钮背景色
+
+@color-tab-default:#9E8451;//tab颜色
+@color-tg-bg:#22262F;
+@color-input-default:#6f7177;
+@color-bg-hover:#262626;
+@color-vip:#CD8D1E;//钻石icon
+
+//公用参数
+@bg-black-d:#171717;// 深黑背景
+@bg-black:#191919;// 较黑区域背景
+@black-5: #283037;
+@color-block:#383838;//块级背景色
+@color-gold:#E7C27F;// 金色
+@color-gray:#808080;
+@color-font:#f0f0f0;
+@color-green: #00b200;
+@color-price:#ff4800;
+@font:16px;// 统一字体（所有字体大小在此基础上增减）
+@color-tab-activ:#D9BA82;
+@color-font-aaa:#AAABB0;
+
+@black-1:#171717;
+@black-2:#191919;
+@black-3:#1f1f1f;
+@gray-1:#f0f0f0;
+@gray-2:#a6a6a6;
+@gray-3:#808080;
+@gray-4:#777777;
+@gray-5:#383838;
+@gray-6:#333333;
+@gray-8: #191b23;
+@gray-9: #7d858e;
+@link:#2F9ED8;
+@bg-login-btn:#dbdbdb;
+@color-login-btn:#999999;
+@line-color:#1D2440;
+@color-gold-s:#9E8451;*/
+.clear-btn {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.clear-both:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+p,
+h1,
+h2 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+.font-family {
+  font-family: SourceHanSansCN-Regular, helvetica, Arial;
+}
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+.clearfix {
+  zoom: 1;
+}
+.more-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+/*::-webkit-scrollbar {
+  display: none;
+}*/
+.el-container {
+  height: 100%;
+}
+.el-main::-webkit-scrollbar,
+.el-aside::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 0;
+  /*高宽分别对应横竖滚动条的尺寸*/
+  height: 0;
+}
+.touziNav {
+  height: 40px;
+  line-height: 40px;
+}
+.touzi-main {
+  display: flex;
+  width: 100%!important;
+  height: 40px;
+  background: #283037;
+  border-top: 1px solid #191B23;
+  border-bottom: 1px solid #191B23;
+  color: #f0f0f0;
+}
+.touzi-main .back-main {
+  border-right: 1px solid #191B23;
+  cursor: pointer;
+  color: #f0f0f0;
+}
+.touzi-main .main-back {
+  width: 87px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+}
+.touzi-main .main-back:hover {
+  color: #fedb0d;
+}
+.touzi-main .tap-link {
+  display: inline-block;
+  font-size: 14px;
+  color: #f0f0f0;
+  width: 65px;
+  text-align: center;
+  cursor: pointer;
+}
+.touzi-main .tap-link.active {
+  font-weight: bold;
+  border-bottom: 2px solid #fedb0d;
+  color: #fedb0d;
+}
+.touzi-main .float-r-input {
+  float: right;
+  position: relative;
+  padding: 5px 0;
+  width: 180px;
+  margin-right: 20px;
+}
+.touzi-main .float-r-input input {
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 25px;
+  line-height: 25px;
+  padding-left: 40px;
+  background: #282f36;
+  font-size: 12px;
+  color: white;
+}
+.touzi-main .float-r-input span {
+  position: absolute;
+  color: #888;
+  top: 10px;
+  left: 5px;
+}
+.el-form-item__error {
+  left: 12px;
+  color: #fc2e3f;
+}
+::-webkit-input-placeholder {
+  color: #7d858e;
+}
+.fb-btn {
+  margin: 3px 20px;
+  display: inline-block;
+  vertical-align: top;
+  width: 80px;
+  height: 28px;
+  text-align: center;
+  line-height: 28px;
+  background: transparent;
+  color: #fedb0d;
+  border: 1px solid #fedb0d;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.el-loading-mask {
+  opacity: 0.5;
+}
+::-webkit-scrollbar-track-piece {
+  border-radius: 10px;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #283037;
+  border-radius: 10px;
+  height: 10px;
+  min-height: 10px;
+}
+.flex-wrap-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-wrap-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-wrap-start {
+  display: flex;
+  align-items: flex-start;
+}
+.flex-column-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.information {
+  color: #ddd;
+  font-size: 14px;
+  height: 100%;
+}
+.information .information-left {
+  height: 100%;
+  float: left;
+}
+.information .information-left .no-img {
+  padding-left: 0 !important;
+}
+.information .information-left .no-img .header-main-right {
+  max-width: 606px !important;
+}
+.information .information-left .content-group {
+  padding: 20px;
+  text-align: left;
+}
+.information .information-left .content-group .header-main-img {
+  width: 174px;
+  height: 120px;
+  float: left;
+}
+.information .information-left .content-group .header-main-right {
+  float: left;
+  margin-left: 20px;
+}
+.information .information-left .content-group .header-main-title {
+  margin: 0;
+  font-size: 16px;
+}
+.information .information-left .content-group .header-main-content {
+  margin: 16px 0;
+  line-height: 24px;
+}
+.information .information-left .content-group .header-main-footer {
+  height: 24px;
+  line-height: 24px;
+}
+.information .information-left .content-group .header-main-footer .footer-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  float: left;
+}
+.information .information-left .content-group .header-main-footer .footer-span {
+  display: inline-block;
+  padding: 0 5px;
+  vertical-align: top;
+}
+.information .information-left .content-group .header-main-footer .footer-hour {
+  color: #999999;
+}
+.information .information-left .content-group .img-list {
+  margin: 16px 0;
+}
+.information .information-left .content-group .img-list img {
+  margin-right: 18px;
+}
+.information .information-left .content-group .img-list img:last-child {
+  margin-right: 0;
+}
+.information .information-left .content-group .more-img {
+  margin-top: 14px;
+}
+.information .information-left .group-footer {
+  padding: 0 20px;
+  height: 46px !important;
+  text-align: left;
+}
+.information .information-left .group-footer .text-title {
+  display: inline-block;
+  vertical-align: top;
+}
+.information .information-left .group-footer .text-title .text-num {
+  padding: 0 5px;
+}
+.information .information-left .information-lists {
+  height: calc(100%);
+  overflow-y: scroll;
+}
+.information .information-left .content-list {
+  border-bottom: 1px solid #2e353b;
+  background-color: #191B23;
+}
+.information .information-left .content-list:hover {
+  /*box-shadow: 0 0 10px #ffffff;*/
+  cursor: pointer;
+}
+.information .information-right {
+  /* width: 50%;
+    height: 100%;
+    float: right;*/
+}
+.information .information-right .right-cont {
+  height: calc(100% - 39px);
+  overflow-y: scroll;
+}
+.information .information-right .touzi-main {
+  text-align: right;
+  width: 100%;
+}
+.information .information-right .touzi-main span {
+  padding: 9px 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+.information .information-right .right-details {
+  background-color: #191B23;
+  border-left: 1px solid #191B23;
+  padding: 20px 20px 0;
+  text-align: left;
+}
+.information .information-right .right-details .details-title {
+  border-bottom: 1px solid #191B23;
+  padding-bottom: 20px;
+}
+.information .information-right .right-details .details-title .details-share {
+  display: inline-block;
+  vertical-align: top;
+  float: right;
+  cursor: pointer;
+}
+.information .information-right .right-details .details-title .details-share i {
+  width: 19px;
+  height: 19px;
+  border-radius: 12px;
+  padding-top: 4px;
+  display: inline-block;
+  vertical-align: top;
+}
+.information .information-right .right-details .details-title .details-share span {
+  padding-left: 0px;
+}
+.information .information-right .right-details .details-title img {
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+}
+.information .information-right .right-details .details-title p {
+  margin: 0px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.information .information-right .right-details .details-title span {
+  height: 24px;
+  line-height: 24px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 10px;
+}
+.information .information-right .right-details .details-title .footer-hour {
+  color: #999999;
+}
+.information .information-right .right-details .details-content {
+  /*color: @color-font;
+        font-size: @font - 2;
+        padding-top: 20px;*/
+}
+.information .information-right .right-details .details-content p {
+  margin: 0;
+}
+.information .information-right .right-details .details-content .content-footer {
+  color: #ddd;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0px 20px 20px 0;
+}
+.information .information-right .right-details .details-content .content-dz {
+  display: inline-block;
+  float: right;
+  cursor: pointer;
+}
+.information .information-right .right-details .details-content .content-dz i {
+  width: 18px;
+  height: 20px;
+  margin-right: 6px;
+}
+.information .information-right .right-details .details-content .content-dz .content-footer-z {
+  padding-right: 10px;
+}
+.information .information-right .right-details .user-comment {
+  padding-bottom: 40px;
+}
+.information .information-right .right-details .user-comment #userScroll {
+  display: flex;
+  justify-content: space-around;
+}
+.information .information-right .right-details .user-comment .comment-tab {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 0px;
+  cursor: pointer;
+}
+.information .information-right .right-details .user-comment .active {
+  font-weight: bold;
+}
+.information .information-right .right-details .user-comment .comment-list {
+  min-height: 160px;
+}
+.information .information-right .right-details .user-comment .comment-list::-webkit-scrollbar {
+  display: none;
+}
+.information .information-right .right-details .user-comment .comment-cont {
+  padding: 20px;
+  border-top: 1px solid #191B23;
+}
+.information .information-right .right-details .user-comment .comment-cont img {
+  float: left;
+  width: 42px;
+  height: 42px;
+  border-radius: 20px;
+}
+.information .information-right .right-details .user-comment .comment-cont .cont-detail {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 20px;
+}
+.information .information-right .right-details .user-comment .comment-cont .cont-detail .user-name {
+  padding-right: 10px;
+}
+.information .information-right .my-cont {
+  padding-bottom: 20px;
+}
+.information .information-right .my-cont textarea {
+  background-color: #282f36;
+  border: none;
+  color: #f0f0f0;
+  resize: none;
+  overflow-y: auto;
+  font-size: 14px;
+  padding: 10px;
+}
+.information .information-right .my-cont textarea:focus {
+  outline: none;
+}
+.information .information-right .my-cont .release-btn {
+  float: right;
+  margin-right: 20px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=information.css.map */

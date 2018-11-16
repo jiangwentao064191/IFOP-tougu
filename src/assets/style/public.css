@@ -1,0 +1,163 @@
+.clear-btn {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.clear-both:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+p,
+h1,
+h2 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+.font-family {
+  font-family: SourceHanSansCN-Regular, helvetica, Arial;
+}
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+.clearfix {
+  zoom: 1;
+}
+.more-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+/*::-webkit-scrollbar {
+  display: none;
+}*/
+.el-container {
+  height: 100%;
+}
+.el-main::-webkit-scrollbar,
+.el-aside::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 0;
+  /*高宽分别对应横竖滚动条的尺寸*/
+  height: 0;
+}
+.touziNav {
+  height: 40px;
+  line-height: 40px;
+}
+.touzi-main {
+  display: flex;
+  width: 100%!important;
+  height: 40px;
+  background: #2A2E3A;
+  border-top: 1px solid #191B21;
+  border-bottom: 1px solid #191B21;
+  color: #DDDDDD;
+}
+.touzi-main .back-main {
+  border-right: 1px solid #191919;
+  cursor: pointer;
+  color: #DDDDDD;
+}
+.touzi-main .main-back {
+  width: 87px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+}
+.touzi-main .main-back:hover {
+  color: #E7C27F;
+}
+.touzi-main .tap-link {
+  display: inline-block;
+  font-size: 14px;
+  color: #DDDDDD;
+  width: 65px;
+  text-align: center;
+  cursor: pointer;
+}
+.touzi-main .tap-link.active {
+  font-weight: bold;
+  border-bottom: 2px solid #E7C27F;
+  color: #E7C27F;
+}
+.touzi-main .float-r-input {
+  float: right;
+  position: relative;
+  padding: 5px 0;
+  width: 180px;
+  margin-right: 20px;
+}
+.touzi-main .float-r-input input {
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 25px;
+  line-height: 25px;
+  padding-left: 40px;
+  background: #191919;
+  font-size: 12px;
+  color: white;
+}
+.touzi-main .float-r-input span {
+  position: absolute;
+  color: #888;
+  top: 10px;
+  left: 5px;
+}
+.el-form-item__error {
+  left: 14px;
+}
+::-webkit-input-placeholder {
+  color: #6F7177;
+}
+.fb-btn {
+  margin: 3px 20px;
+  display: inline-block;
+  vertical-align: top;
+  width: 80px;
+  height: 28px;
+  text-align: center;
+  line-height: 28px;
+  color: #E7C27F;
+  border: 1px solid #E7C27F;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.el-loading-mask {
+  opacity: 0.5;
+}
+::-webkit-scrollbar-track-piece {
+  border-radius: 10px;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #808080;
+  border-radius: 10px;
+  height: 10px;
+  min-height: 10px;
+}
+.vjs-fullscreen-control,.vjs-mute-control,.vjs-play-control{
+  border: none !important;
+  outline: none !important;
+}
+
